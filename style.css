@@ -991,13 +991,10 @@ i.iconfont.down { margin-right: 6px; font-size: 18px; position: relative; top: 1
     .top-feature { display: none }
     .site-content { padding: 0 4% }
     .feature img { width: 52px; height: 52px }
-    .post-entry h1.entry-title { margin: 0 0 0 65px; font-size: 16px; line-height: 30px; }
+    .post-entry h1.entry-title { margin: 0; font-size: 16px; line-height: 30px; }
     .post-con h1.entry-title { margin: 0; font-size: 16px; line-height: 30px; }
-    .post-entry .p-time { position: relative; margin: -15px 0 0 65px; }
-    .post-con .p-time { position: relative; margin: -15px 0 0 0; }
-    .post-entry p { margin: 20px 0 0 65px; font-size: 14px; overflow: hidden; }
-    .post-con p { margin: 20px 0 0 0px; font-size: 14px; overflow: hidden; }
-
+    .post-con .p-time { margin: -15px 0 0 0; }
+    .entry-extra { width: 100%}
     .s-content { padding: 10px 15px; margin-right: 65px }
     .s-content p { margin-left: 0; margin-top: 0; height: 30px; overflow: hidden; }
     .postava img { width: 52px; height: 52px }
@@ -1012,7 +1009,7 @@ i.iconfont.down { margin-right: 6px; font-size: 18px; position: relative; top: 1
     .m-nav { display: block }
     .site-header { display: none }
     .site-branding { float: right; height: 50px; line-height: 43px;}
-    .site-title img { height: 40px; line-height: 40px; margin: 0; vertical-align: middle; }
+    .site-title img { height: 30px; line-height: 30px; margin: 0; vertical-align: middle; }
     .site-title { font-size: 20px; margin-right: 10px; line-height: 50px; font-family: miranafont, "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
     .links ul li { width: 48.6%; }
     .links ul li:before { display: none }
