@@ -61,7 +61,22 @@ Tags: Akina（娱乐版）
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; overflow-x: hidden; }
+
+
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 20px; overflow-x: hidden;  }
+@media only screen and (min-width:400px) {
+    html { font-size: 21.33333333px !important; }
+}
+@media only screen and (min-width:414px) {
+    html { font-size: 22.08px !important; }
+}
+@media only screen and (min-width:480px) {
+    html { font-size: 25.6px !important; }
+}
+
+html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body { margin: 0; font: normal 17px miranafont, "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1); }
 input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
 ::selection { background: #444444; color: #fff; }
@@ -198,12 +213,12 @@ a:hover, a:active { outline: none; }
 .pattern-center::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.3); }
 .pattern-center::after { content: ''; width: 150%; height: 4.375rem; background: #fff; left: -25%; bottom: -2.875rem; border-radius: 100%; position: absolute; }
 .pattern-attachment-img {    /*background-attachment: fixed;*/
-background-repeat: no-repeat; background-size: cover; background-position: center center; background-origin: border-box; width: 100%; height: 400px; }
+background-repeat: no-repeat; background-size: cover; background-position: center center; background-origin: border-box; width: 100%; height: 290px; -webkit-filter: blur(30px); -moz-filter: blur(30px); -o-filter: blur(30px); -ms-filter: blur(30px); filter: blur(30px); }
 .pattern-center header.pattern-header { position: absolute; top: 45%; left: 0; right: 0; text-align: center; color: #FFFFFF; z-index: 1; }
 .pattern-center h1.cat-title, .pattern-center h1.entry-title { color: #FFFFFF; font-size: 40px; font-weight: 700; width: 80%; margin: auto; padding: 0; border: 0; font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif; }
 .pattern-center .cat-des { font-size: 16px; display: block; }
 .single-center::after { display: none; }
-.pattern-center header.single-header { max-width: 800px; padding: 0 10px; margin-left: auto; margin-right: auto; text-align: left; top: auto; bottom: 20px; }
+.pattern-center header.single-header { max-width: 800px; padding: 0 10px; margin-left: auto; margin-right: auto; text-align: left; top: auto; bottom: 30px; }
 .single-center .single-header h1.entry-title { margin: 0; font-size: 32px; width: 100%; }
 .single-center .entry-census { color: #fff; font-size: 14px; padding: 18px 0 0; line-height: 39px; }
 .single-center .entry-census .bull { margin: 0 5px; }
@@ -273,7 +288,6 @@ background-repeat: no-repeat; background-size: cover; background-position: cente
 .site-content { max-width: 800px; padding: 0 10px; margin-left: auto; margin-right: auto; }
 .post-list { margin: 0 0 8% 0; position: relative; }
 .feature { position: absolute; top: 0; right: 0 }
-.feature i { position: absolute; top: 10px; left: 10px; font-size: 25px; color: white; width: 80px; height: 80px; line-height: 80px; text-align: center; background: #BBE2DB; border-radius: 50%; opacity: 0; z-index: 1; }
 .feature img { width: 90px; height: 90px; border-radius: 50%; padding: 2px; border: 1px solid #DADADA; position: relative; }
 .post-con .vertical-line { display: inline-block; margin-left: 2px; width: 3px; height: 105px; background-color: #999; opacity: 0.5 }
 .post-entry h1.entry-title, .post-con h1.entry-title { font-size: 22px; font-weight: 700; line-height: 50px; margin: 0; position: relative; z-index: 1; display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 84%; }
@@ -991,16 +1005,19 @@ i.iconfont.down { margin-right: 6px; font-size: 18px; position: relative; top: 1
     .top-feature { display: none }
     .site-content { padding: 0 4% }
     .feature img { width: 52px; height: 52px }
-    .post-entry h1.entry-title { margin: 0; font-size: 16px; line-height: 30px; }
-    .post-con h1.entry-title { margin: 0; font-size: 16px; line-height: 30px; }
-    .post-con .p-time { margin: -15px 0 0 0; }
-    .entry-extra { width: 100%}
+    .post-entry h1.entry-title { margin: 0; font-size: 0.8rem; line-height: 1.6; }
+    .post-con h1.entry-title { margin: 0; font-size: 0.8rem; line-height: 1.6; }
+    .post-entry .p-time { margin: -15px 0 0 0; }
+    .post-con .p-time {  margin: -15px 0 0 0; }
+
+    .entry-extra { font-size: 0.6rem }
+    .entry-extra .i-bl { font-size: 0.7 }
     .s-content { padding: 10px 15px; margin-right: 65px }
     .s-content p { margin-left: 0; margin-top: 0; height: 30px; overflow: hidden; }
     .postava img { width: 52px; height: 52px }
     .overlay { display: none; }
-    h1.entry-title { font-size: 18px }
-    .entry-content p { font-size: 14px }
+    h1.entry-title { font-size: 1rem }
+    .entry-content p { font-size: 0.8rem }
     .post-footer, .post-share, .post-like { display: none }
     .post-tags { text-align: center; float: none; font-size: 12px }
     .author-profile { display: none }
@@ -1009,8 +1026,8 @@ i.iconfont.down { margin-right: 6px; font-size: 18px; position: relative; top: 1
     .m-nav { display: block }
     .site-header { display: none }
     .site-branding { float: right; height: 50px; line-height: 43px;}
-    .site-title img { height: 30px; line-height: 30px; margin: 0; vertical-align: middle; }
-    .site-title { font-size: 20px; margin-right: 10px; line-height: 50px; font-family: miranafont, "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
+    .site-title img { height: 40px; line-height: 40px; margin: 0; vertical-align: middle; }
+    .site-title { font-size: 1rem; margin-right: 0.5rem; line-height: 50px; font-family: miranafont, "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
     .links ul li { width: 48.6%; }
     .links ul li:before { display: none }
     .links ul li:hover .sitename { color: #A0DAD0; }
