@@ -378,7 +378,7 @@ i.iconfont.hotpost { font-size: 14px; color: #FF3B00; }
 .entry-content ul { list-style: disc; background: #F9F9F9; border: 1px dashed #E4E4E4; padding: 15px 10px 15px 50px; color: #616161; margin-left: 0; }
 .entry-content ol { list-style: decimal; background: #F9F9F9; border: 1px dashed #E4E4E4; padding: 15px 10px 15px 50px; color: #616161; margin-left: 0; }
 .entry-content ol li, .entry-content ul li { padding: 8px 0; }
-.entry-content { position: relative; color: #333; font-size: 16px; line-height: 1.7 }
+.entry-content { position: relative; color: #333; font-size: 16px; line-height: 1.8 }
 .entry-content p { margin:0  0 1.5em 0; font-family: "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif; }
 .entry-content h3 { padding-bottom: 8px; border-bottom: 1px dashed #ddd; color: #737373; }
 .entry-content h3:before { content: "["; margin-right: 5px; color: #FF6D6D; font-size: 25px; }
